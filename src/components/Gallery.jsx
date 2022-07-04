@@ -6,10 +6,14 @@ function Gallery() {
     
     const imageArray =[];
 
-    const passProps=(e)=>{
+    const launch_lightbox=(e)=>{
         const paths=e.target.src
-        return(<LightBox path={paths}/>)
+        return(
+            <>
+                <LightBox path={paths} show={"visible"}/>
+            </>
         
+        )
         
     }
 
@@ -23,7 +27,7 @@ function Gallery() {
        <h1 className='center_center'>Gallery</h1>
         <div className="gallery">
             {imageArray.map((photo,index)=>(
-                <img src={photo} key={index} alt="" className='images' onClick={passProps}/>
+                <img src={photo} key={index} alt="" className='images' onClick={launch_lightbox}/>
             )
             )}
         </div>

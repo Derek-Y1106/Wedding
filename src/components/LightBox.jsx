@@ -1,18 +1,17 @@
 import React from 'react'
 // import {CgClose} from 'react-icon/cg'
 function LightBox(props) { 
-    console.log(props.paths);
-
-    // const showImage=()=>{
-    //     const images= document.getElementsByClassName("gallery img");
-  
-    //     console.log(images);
-    //   }
+    const showImage=(path)=>{
+        const lightboxWindow= document.getElementsByClassName("lightbox_wrapper");
+        console.log(path);
+        lightboxWindow[0].style.visibility=props.show;
+      }
 
     const closeLightbox=()=>{
         const lightboxWindow= document.getElementsByClassName("lightbox_wrapper");
-        lightboxWindow.style.visibility ='hidden';
+        lightboxWindow[0].style.visibility ="hidden";
     }
+    showImage(props.paths);
 
   return (
     <div>

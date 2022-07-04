@@ -1,7 +1,7 @@
 import React from 'react'
 // import {CgClose} from 'react-icon/cg'
 function LightBox(props) { 
-    console.log(props.path);
+    console.log(props.paths);
 
     // const showImage=()=>{
     //     const images= document.getElementsByClassName("gallery img");

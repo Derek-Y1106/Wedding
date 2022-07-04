@@ -1,0 +1,21 @@
+.gallery_cover{
+    padding:5em;
+    h1{
+        font-size: 8em;
+        font-weight: 200;
+    }
+    .gallery{
+        z-index: 2;
+        columns: 4;
+        padding: .5em;
+        .images{
+            z-index: 2;
+            display:block;
+            max-width:100%;
+            padding:.5em;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            
+        }
+    }
+}

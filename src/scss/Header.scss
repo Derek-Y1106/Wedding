@@ -1,0 +1,40 @@
+.header{
+    z-index: 999;
+    height: 15vh;
+    padding: 0 3em;
+    color: black;
+    img{
+        width: 8em;
+        min-height: 100%;
+    }
+    ul{
+        display: flex;
+        li.nav_item a{
+            position: relative;
+            height: 100%;
+            margin: 0 2em;
+            font-size: 30px;
+            transition: 1s ease-in-out; 
+            &:hover{
+                transform: scale(1.2);
+                color: var(--button_color);
+            }
+            
+        }
+    }
+}
+.nav_item a.active{
+    position: relative;
+    color:var(--button_color);
+    transition: 1s ease-in-out;
+    
+    &::after{
+        position: absolute;
+        content:"";
+        bottom:-5px;
+        left: 0;
+        height: 2px;
+        width:90%;
+        background-color: var(--button_color);
+    }
+}

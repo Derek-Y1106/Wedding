@@ -1,5 +1,7 @@
 import React from 'react'
 import '../scss/Gallery.scss'
+import LightBox from './LightBox';
+
 function Gallery() {
     
     const imageArray =[];
@@ -8,13 +10,18 @@ function Gallery() {
         imageArray.push("photos/Wedding"+index+".jpg");
         
     }
-
+   const showImage=()=>{
+        const images= document.getElementsByClassName("gallery img");
+  
+        console.log(images);
+      }
+      
   return (
     <div className='gallery_cover'>
        <h1 className='center_center'>Gallery</h1>
         <div className="gallery">
             {imageArray.map((photo,index)=>(
-                <img src={photo} key={index} alt="" className='images' />
+                <img src={photo} key={index} alt="" className='images' onClick={() => {<LightBox path={photo}/>}}/>
             )
             )}
         </div>

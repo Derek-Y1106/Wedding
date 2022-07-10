@@ -1,0 +1,37 @@
+.lightbox_wrapper{
+    z-index: 999;
+    position: fixed;
+    visibility:hidden;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgba(108, 108, 108, 0.509);
+
+    .lightbox{
+        position: relative;
+        width: 55%;
+        height: 80%;
+            .lightbox_inner{
+                position: relative;
+                height: 100%;
+            img{
+                max-height: 100%;
+                object-fit: contain;
+            }
+            button{
+                position:absolute;
+                top:.5em;
+                right:.5em;
+                background-color: var(--button_color);
+                color: var(--button_font_color);
+                border: 1px solid transparent;
+                border-radius: 20%;
+                font-size: 1em;
+                &:hover{
+                    color: var(--primary_color);
+                }
+            }
+        }
+    }
+}

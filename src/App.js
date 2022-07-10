@@ -7,14 +7,14 @@ import Footer from "./global/Footer";
 import Header from "./global/Header";
 
 function App() {
+  
   return (
     <div>
       <BrowserRouter>
         <div><Header/></div>
-        
           <Routes>
             <Route path="/" exact element={<Home />} />
-            <Route path="/Wedding_Website" exact element={<Home />} />
+            <Route path="/Wedding" exact element={<Home />} />
             <Route path="/Mr" exact element={<Mr />} />
             <Route path="/Mrs" exact element={<Mrs />} />
           </Routes>

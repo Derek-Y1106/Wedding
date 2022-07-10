@@ -5,8 +5,7 @@ import '../scss/Header.scss'
 function Header() {
   return (
     <div>
-      <div className="header x_between">
-        <img src="https://picsum.photos/id/684/600/400" alt=""/>
+      <div className="header center_right">
         <ul className='center_center'>
           <li className='nav_item '><NavLink  to={"/"}    >Home</NavLink></li>
           <li className='nav_item '><NavLink  to={"/Mr"}  >Visit Mr</NavLink></li>

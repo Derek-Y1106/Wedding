@@ -9,7 +9,6 @@ function Home() {
       <div className="video_wrapper">
          <video src={WeddingVideo} autoPlay loop muted></video>
       </div>
-       
       <Gallery />
     </div>
   )

@@ -19,7 +19,9 @@ function Gallery() {
        <h1 className='gallery_title center_center'>Gallery</h1>
         <div className="gallery">
             {imageArray.map((photo,index)=>(
-                <img src={photo} key={index} alt="" className='images' onClick={launch_lightbox}/>
+                <div className="img_wrapper">
+                  <img src={photo} key={index} alt="" className='images' onClick={launch_lightbox}/>
+                </div>
             )
             )}
             <LightBox path={Image}/>

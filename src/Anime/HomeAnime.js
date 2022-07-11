@@ -8,7 +8,7 @@
 //         translateX: [0,250],
 //         duration: 800
 //     });
-//     console.log("anime");
+//     console.log("anime"); 
 // }
 
 // export default HomeAnime

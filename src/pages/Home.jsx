@@ -5,8 +5,11 @@ import '../scss/Home.scss'
 
 function Home() {
   return (
-    <div>
-      <video className='video1' src={WeddingVideo} autoPlay loop muted></video>
+    <div className='Home'>
+      <div className="video_wrapper">
+         <video src={WeddingVideo} autoPlay loop muted></video>
+      </div>
+       
       <Gallery />
     </div>
   )

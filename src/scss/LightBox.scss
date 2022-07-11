@@ -1,3 +1,4 @@
+
 .lightbox_wrapper{
     z-index: 999;
     position: fixed;
@@ -10,28 +11,37 @@
 
     .lightbox{
         position: relative;
-        width: 55%;
-        height: 80%;
+        width: 65%;
+        height: 85%;
             .lightbox_inner{
                 position: relative;
                 height: 100%;
-            img{
-                max-height: 100%;
                 object-fit: contain;
+            img{
+                max-height: 99%;
+                object-fit: contain;
+                
             }
             button{
                 position:absolute;
-                top:.5em;
-                right:.5em;
-                background-color: var(--button_color);
-                color: var(--button_font_color);
+                top:1em;
+                right:.7em;
+                background-color: var(--background_color);
+                color: var(--button_active_color);
+                font-weight: bold;
                 border: 1px solid transparent;
                 border-radius: 20%;
                 font-size: 1em;
+                cursor: pointer;
                 &:hover{
-                    color: var(--primary_color);
+                    background-color: var(--secondary_color);
                 }
             }
         }
     }
 }
+
+@import "../global/globalCss/global.scss";
+@media screen and (min-width:$labtop) and (max-width:$pc){}
+@media (min-width:$mobile) and (max-width:$labtop){}
+@media (max-width:$mobile) {}

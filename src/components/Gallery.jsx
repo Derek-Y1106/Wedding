@@ -5,7 +5,6 @@ import {LightBox, openLightbox} from './LightBox';
 function Gallery() {
     const imageArray =[];
     const [Image,setImage]=useState();
-    // const [Image,setImage]=useState();
     
     for (let index = 1; index <=18; index++) { 
             imageArray.push("photos/Wedding"+index+".jpg");

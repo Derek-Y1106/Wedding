@@ -1,24 +1,21 @@
 :root{
-  --primary_color:#85bae3;
-  --secondary_color:#fee46d;
-  --button_font_color:#133869;
-  --button_color:#b7d6ee;
-  --backgorund_color:#f2f3eb;
+  --primary_color:#609ecd;
+  --secondary_color:#fee46d;  
+  --button_color:#abcde9;
+  --button_active_color:#133869;
+  --background_color:#f2f3eb;
   --font_color:#233244;
 }
 
-html,body,div{
+html,body,div,video{
   margin:0;
   padding:0;
   overflow-x: hidden;
-  box-sizing: border-box;
 }
 ::-webkit-scrollbar{
   display: none;
 }
-button{
-  cursor: pointer;
-}
+
 
 h1,h2,h3,h4,h5,button{
   color: var(--primary_color);
@@ -36,7 +33,7 @@ li{
 }
 a{
   text-decoration: none;
-  color: var(--button_font_color);
+  color: var(--button_color);
 }
 
 .center_center{

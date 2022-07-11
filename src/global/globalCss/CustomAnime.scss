@@ -1,0 +1,11 @@
+@keyframes expand_reverse {
+    0%{
+        letter-spacing: 0em;
+    }
+    50%{
+        letter-spacing: 1em;
+    }
+    100%{
+        letter-spacing: 0em;
+    }
+}

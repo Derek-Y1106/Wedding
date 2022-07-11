@@ -1,5 +1,5 @@
 .Home{
-    background: linear-gradient(170deg, rgba(255,255,255,1) 1%, rgba(255,250,192,1) 44%, hsl(51, 93%, 83%) 100%);
+    background: linear-gradient(170deg, rgba(255,255,255,1) 1%, rgba(255,250,192,1) 44%, rgb(252, 240, 171) 100%);
 
 }
 .video_wrapper{
@@ -7,6 +7,15 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    &:before{
+        height: 100%;
+        width: 100%;
+        content: '';
+        top: 0;
+        left: 0;
+        background-color: azure;
+        z-index: 5;
+    }
     video{
         width: 100%;
         height: 100%;

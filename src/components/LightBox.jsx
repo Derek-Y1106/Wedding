@@ -17,13 +17,14 @@ function LightBox(props) {
 }
 const openLightbox=()=>{
     const lightboxWindow= document.getElementsByClassName("lightbox_wrapper");
-    lightboxWindow[0].style.visibility='visible';
-
+    lightboxWindow[0].style.opacity="1";
+    lightboxWindow[0].style.zIndex="3";
 }
 
 const closeLightbox=()=>{
     const lightboxWindow= document.getElementsByClassName("lightbox_wrapper");
-    lightboxWindow[0].style.visibility ="hidden";
+    lightboxWindow[0].style.opacity ="0";
+    lightboxWindow[0].style.zIndex="-1";
 }
 
 export {LightBox,openLightbox};

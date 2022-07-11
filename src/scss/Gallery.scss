@@ -1,48 +1,38 @@
 .gallery_cover{
-    padding: 4em 8em;
+
     h1{
         font-size: 8em;
         font-weight: 200;
         color: var(--primary_color);
     }
     .gallery{
+        padding: 3em 5em;
         z-index: 2;
         columns: 4;
          gap: 0em;
         .img_wrapper{
+            z-index: 2;
             position: relative;
             border: 1px solid transparent;
             border-radius: 20px;
             overflow: hidden;
             margin: 1em .5em;
             max-width:100%;
-            
-            &:before{
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                z-index: 5;
-                width: 100%;
-                height: 100%;
-                // background-color: white;
-                opacity: .5;
-                visibility: visible; 
-                &:hover{
-                background-color: rebeccapurple;
-                }
-            }
            
             .images{
                 position: relative;
                 z-index: 2;
-
+                opacity: .7;
                 display:block;
                 cursor: pointer;
                 max-width:100%;
                 max-height: 100%;
-                transition: 1s ease-in-out transform;
+                transition: .5s ease-in-out;
+                &:hover{
+                    opacity: 1;
+                }
             }
+            
 
         }
     }
@@ -54,23 +44,23 @@
 @media screen and (min-width:$labtop) and (max-width:$pc){}
 @media (min-width:$mobile) and (max-width:$labtop){
     .gallery_cover{
-        padding:3em;
         h1{
             font-size: 6em;
         }
         .gallery{
             columns: 3;
+            padding:3em;
         }
     }
 }
 @media (max-width:$mobile) {
     .gallery_cover{
-        padding:2em;
         h1{
             font-size: 5em;
         }
         .gallery{
             columns: 2;
+            padding:2em;
         }
     }
 }

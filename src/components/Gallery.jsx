@@ -17,14 +17,24 @@ function Gallery() {
   return (
     <div className='gallery_cover'>
        <h1 className='gallery_title center_center'>Gallery</h1>
-        <div className="gallery">
-            {imageArray.map((photo,index)=>(
-                <div className="img_wrapper">
-                  <img src={photo} key={index} alt="" className='images' onClick={launch_lightbox}/>
+        <div className="gallery x_even">
+            <div className="gallery_side">
+                <div className="side_content">
+                  <h1> Move on toward New Life</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, recusandae?</p>
                 </div>
-            )
-            )}
-            <LightBox path={Image}/>
+            </div>
+
+            <div className="gallery_img">
+              {imageArray.map((photo,index)=>(
+                  <div className="img_wrapper">
+                    <img src={photo} key={index} alt="" className='images' onClick={launch_lightbox}/>
+                  </div>
+              )
+              )}
+              <LightBox path={Image}/>
+            </div>
+            
         </div>
     </div>
   )

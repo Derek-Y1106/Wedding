@@ -8,17 +8,30 @@
     .gallery{
         padding: 5em;
         z-index: 2;
-        
          .gallery_side{
+            position: relative;
             width: 20vw;
-            padding: 2em;
+            height:200vh ;
             .side_content{
+                position: relative;
+                writing-mode: vertical-rl; 
+                width: 100%;
+                height: 100%;
+                align-items: flex-start;
+                .side_logo{
+                    position: absolute;
+                    width: 100%;
+                    font-size: 6em;
+                    top: -10%;
+                    color: var(--primary_color);
+                }
                 h1{
-                    font-size: 3em;
-                    transform: rotate(-180);
+                    text-transform: uppercase;
+                    font-size: 3.5em;
+                    margin-left: .2em;
                 }
                 p{
-                    
+                    font-size: 1.5em;
                 }
             }
          }

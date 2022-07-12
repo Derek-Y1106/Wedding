@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../scss/Gallery.scss'
 import {LightBox, openLightbox} from './LightBox';
+import {GiRoyalLove} from "react-icons/gi"
 
 function Gallery() {
     const imageArray =[];
@@ -15,13 +16,14 @@ function Gallery() {
         openLightbox();
     }
   return (
-    <div className='gallery_cover'>
+    <div className='gallery_cover y_even'>
        <h1 className='gallery_title center_center'>Gallery</h1>
         <div className="gallery x_even">
-            <div className="gallery_side">
-                <div className="side_content">
+            <div className="gallery_side ">
+                <div className="side_content column_center_center">
+                <div className='side_logo center_center'><GiRoyalLove/></div>
                   <h1> Move on toward New Life</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, recusandae?</p>
+                  <p>Lorem ipsum dolor sit am consectetur adipisici consectetur adipisici consectetur adipisiciet consectetur adipisicing elit. Voluptas, recusandae?</p>
                 </div>
             </div>
 

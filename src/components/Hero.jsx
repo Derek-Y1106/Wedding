@@ -1,7 +1,21 @@
 import React from 'react'
+import { useState } from 'react';
 import '../scss/Hero.scss'
 
 function Hero() {
+    const [toggle,setToggle] = useState(false);
+    const moveSlider=()=>{
+        const getSlider=document.querySelector(".hero_slider");
+        setToggle(!toggle);
+        console.log(getSlider);
+        if(!toggle){
+            getSlider.style.transform="translateX(100%)";
+        }
+        else{
+            getSlider.style.transform="translateX(0%)";
+        }
+    }
+
   return (
     <div>
         <div className="hero_wrapper">
@@ -9,9 +23,9 @@ function Hero() {
                 <div className="hero_slider">
 
                 </div>
-                <div className="arrow_wrapper">
-                    <div className="arrow_left"></div> 
-                    <div className="arrow_right"></div>
+                <div className="arrow_wrapper" >
+                    <div className="arrow_left" onClick={moveSlider}></div> 
+                    <div className="arrow_right" onClick={moveSlider}></div>
                 </div>
                 <div className="hero_inner column_center_center">
                     <div className="content">

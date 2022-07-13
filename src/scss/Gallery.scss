@@ -6,11 +6,11 @@
         color: var(--primary_color);
     }
     .gallery{
-        padding: 5em;
+        padding: 2em;
         z-index: 2;
          .gallery_side{
             position: relative;
-            width: 15vw;
+            width: 20vw;
             .side_content{
                 position: relative;
                 writing-mode: vertical-rl; 
@@ -40,7 +40,7 @@
             }
          }
          .gallery_img{
-            width: 85vw;
+            width: 80vw;
             columns: 4;
             gap: 0em;
             .img_wrapper{
@@ -85,22 +85,24 @@
             .gallery_side{
                 .side_content{
                     .side_logo{
-                        font-size: 6em;
-                        top: -10%;
+                        font-size: 4.5em;
+                    }
+                    h1,p{
+                        margin-top: 5rem;
                     }
                     h1{
                         text-transform: uppercase;
-                        font-size: 3em;
+                        font-size: 5em;
                         font-weight: 800;
                     }
                     p{
-                        font-size: 1.5em;
-                        margin-right:-10px ;
+                        font-size: 2em;
+                        margin-right:-20px ;
                     }
                 }
             }
             .gallery_img{
-                columns: 3;
+                columns: 2;
             }
         }
     }
@@ -117,6 +119,13 @@
                         font-size: 6em;
                         top: -10%;
                     }
+                    .side_logo{
+                        top: 0;
+                        font-size: 3.5em;
+                    }
+                    h1,p{
+                        margin-top: 4rem;
+                    }
                     h1{
                         text-transform: uppercase;
                         font-size: 2.5em;
@@ -124,7 +133,7 @@
                     }
                     p{
                         font-size: 1em;
-                        margin-right:-15px ;
+                        margin-right:-10px ;
                     }
                 }
             }

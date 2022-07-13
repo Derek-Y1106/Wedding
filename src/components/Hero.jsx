@@ -24,8 +24,10 @@ function Hero() {
 
                 </div>
                 <div className="arrow_wrapper" >
+                    <div className="slide_word">Slide</div>
                     <div className="arrow_left" onClick={moveSlider}></div> 
                     <div className="arrow_right" onClick={moveSlider}></div>
+                    <div className="slide_word">Slide</div>
                 </div>
                 <div className="hero_inner column_center_center">
                     <div className="content">

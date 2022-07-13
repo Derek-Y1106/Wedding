@@ -20,16 +20,16 @@ function Gallery() {
        <h1 className='gallery_title center_center'>Gallery</h1>
         <div className="gallery x_even">
             <div className="gallery_side ">
-                <div className="side_content column_center_center">
-                <div className='side_logo center_center'><GiRoyalLove/></div>
+                <div className="side_content column_top_center">
+                <div className='side_logo'><GiRoyalLove/></div>
                   <h1> Move on toward New Life</h1>
-                  <p>Lorem ipsum dolor sit am consectetur adipisici consectetur adipisici consectetur adipisiciet consectetur adipisicing elit. Voluptas, recusandae?</p>
+                  <p>Lorem ipsum dolor sit am consectetur adipisicing elit. Voluptas, recusandae?</p>
                 </div>
             </div>
 
             <div className="gallery_img">
               {imageArray.map((photo,index)=>(
-                  <div className="img_wrapper">
+                  <div className="img_wrapper" key={index}>
                     <img src={photo} key={index} alt="" className='images' onClick={launch_lightbox}/>
                   </div>
               )

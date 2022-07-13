@@ -1,11 +1,11 @@
-@keyframes expand_reverse {
-    0%{
-        letter-spacing: 0em;
+@keyframes arrow_left {
+    to{
+        transform: rotate(180deg+45deg) translate(-20px,20px);
     }
-    50%{
-        letter-spacing: 1em;
-    }
-    100%{
-        letter-spacing: 0em;
+}
+
+@keyframes arrow_right {
+    to{
+        transform: rotate(45deg) translate(-20px,20px);
     }
 }

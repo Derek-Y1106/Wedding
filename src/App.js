@@ -5,14 +5,12 @@ import Mr from './pages/Mr';
 import Mrs from './pages/Mrs';
 import Footer from "./global/Footer";
 import Header from "./global/Header";
-import Cursor from './components/Cursor';
 
 function App() {
   
   return (
     <div>
       <BrowserRouter>
-        <Cursor />
         <div><Header/></div>
           <Routes>
             <Route path="/" exact element={<Home />} />

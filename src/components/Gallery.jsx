@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import '../scss/Gallery.scss'
 import {LightBox, openLightbox} from './LightBox';
-import {GiRoyalLove} from "react-icons/gi"
+import {GiRoyalLove} from "react-icons/gi";
+import {MoveLeft} from "../Anime/CustomAnime";
 
 function Gallery() {
     const imageArray =[];
@@ -29,7 +30,7 @@ function Gallery() {
             <div className="gallery_right_wrapper y_even">
               <div className="gallery_img">
                 {imageArray.map((photo,index)=>(
-                    <div className="img_wrapper">
+                    <div className="img_wrapper" key={index}>
                       <img src={photo} key={index} alt="" className='images' onClick={launch_lightbox}/>
                     </div>
                 )
@@ -39,7 +40,7 @@ function Gallery() {
                 
                 <div className="bottom_content column_center_right">
                   <div className="content_wrapper">
-                    <h1>Lorem ipsum dolor sit amet consectetur </h1>
+                    <h1 onMouseEnter={MoveLeft}>Lorem ipsum dolor sit amet consectetur </h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet sunt nihil esse ipsa exercitationem corrupti quod amet.</p>
                   </div>
                 </div>

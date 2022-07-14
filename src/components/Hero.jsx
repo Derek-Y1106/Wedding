@@ -3,11 +3,11 @@ import { useState } from 'react';
 import '../scss/Hero.scss'
 
 function Hero() {
-    const [toggle,setToggle] = useState(false);
+    const [toggle,setToggle] = useState(true);
     const moveSlider=()=>{
         const getSlider=document.querySelector(".hero_slider");
         setToggle(!toggle);
-        if(!toggle){
+        if(toggle){
             getSlider.style.transform="translateX(100%)";
             getSlider.style.backgroundImage="url('/photos/Wedding12.jpg')"
         }
@@ -16,10 +16,17 @@ function Hero() {
             getSlider.style.backgroundImage="url('/photos/Wedding16.jpg')"
         }
     }
+    const slide_up=()=>{
+        const target=document.querySelectorAll(".slide_word");
+        target[0].style.transform="translateY(0%)";
+        target[1].style.transform="translateY(0%)";
+    }
 
-    const MouseOut=()=>{
-        const getSlider=document.querySelector(".hero_slider");
-        getSlider.style.transform="translateX(0%)";
+    const slide_down=()=>{
+        const target=document.querySelectorAll(".slide_word");
+        target[0].style.transform="translateY(200%)";
+        target[1].style.transform="translateY(200%)";
+        console.log(target[0]);
     }
 
   return (
@@ -29,10 +36,10 @@ function Hero() {
                 <div className="hero_slider">
 
                 </div>
-                <div className="arrow_wrapper" >
+                <div className="arrow_wrapper center_center" >
                     <div className="slide_word">Slide</div>
-                    <div className="arrow_left" onClick={moveSlider} ></div> 
-                    <div className="arrow_right" onClick={moveSlider} onMouseLeave={MouseOut}></div>
+                    <div className="arrow_left" onClick={moveSlider} onMouseEnter={slide_up} onMouseLeave={slide_down}></div> 
+                    <div className="arrow_right" onClick={moveSlider} onMouseEnter={slide_up} onMouseLeave={slide_down}></div>
                     <div className="slide_word">Slide</div>
                 </div>
                 <div className="hero_inner column_center_center">

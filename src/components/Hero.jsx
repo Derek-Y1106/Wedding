@@ -17,6 +17,11 @@ function Hero() {
         }
     }
 
+    const MouseOut=()=>{
+        const getSlider=document.querySelector(".hero_slider");
+        getSlider.style.transform="translateX(0%)";
+    }
+
   return (
     <div>
         <div className="hero_wrapper">
@@ -26,8 +31,8 @@ function Hero() {
                 </div>
                 <div className="arrow_wrapper" >
                     <div className="slide_word">Slide</div>
-                    <div className="arrow_left" onClick={moveSlider}></div> 
-                    <div className="arrow_right" onClick={moveSlider}></div>
+                    <div className="arrow_left" onClick={moveSlider} ></div> 
+                    <div className="arrow_right" onClick={moveSlider} onMouseLeave={MouseOut}></div>
                     <div className="slide_word">Slide</div>
                 </div>
                 <div className="hero_inner column_center_center">
@@ -44,7 +49,6 @@ function Hero() {
                 </div>
             </div>
         </div>
-        <div className='test'></div>
     </div>
   )
 }

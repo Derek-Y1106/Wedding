@@ -1,6 +1,5 @@
 .gallery_cover{
     .gallery{
-        padding: 2em;
         z-index: 2;
          .gallery_side{
             position: relative;
@@ -14,7 +13,7 @@
                 white-space: nowrap;
                 .side_logo{
                     position: absolute;
-                    font-size: 7.5em;
+                    font-size: 6.5em;
                     top: 0;
                     color: var(--primary_color);
                 }
@@ -23,7 +22,7 @@
                 }
                 h1{
                     text-transform: uppercase;
-                    font-size: 6em;
+                    font-size: 5em;
                     font-weight: 800;
                 }
                 p{
@@ -32,39 +31,61 @@
                     font-weight: lighter;
                 }
             }
-         }
-         .gallery_img{
-            width: 80vw;
-            columns: 4;
-            gap: 0em;
-            .img_wrapper{
-                z-index: 2;
-                position: relative;
-                border: 1px solid transparent;
-                border-radius: 20px;
-                overflow: hidden;
-                margin: 1em .5em;
-                max-width:100%;
-            
-                .images{
-                    position: relative;
+        }
+
+        .gallery_right_wrapper{
+            .gallery_img{
+                width: 80vw;
+                columns: 4;
+                gap: 0em;
+    
+                .img_wrapper{
                     z-index: 2;
-                    opacity: .7;
-                    display:block;
-                    cursor: pointer;
+                    position: relative;
+                    overflow: hidden;
+                    margin-left:1em;
+                    margin-bottom: 1em;
                     max-width:100%;
-                    max-height: 100%;
-                    transition: .5s ease-in-out;
-                    &:hover{
-                        opacity: 1;
+                
+                    .images{
+                        position: relative;
+                        z-index: 2;
+                        opacity: .7;
+                        display:block;
+                        cursor: pointer;
+                        max-width:100%;
+                        max-height: 100%;
+                        transition: .5s ease-in-out;
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                } 
+            }
+
+            .bottom_content{
+                width: 70%;
+                margin-top: 5rem;
+                border-top: 2px solid black ;
+                box-sizing: border-box;
+
+                .content_wrapper{
+                    padding: 2rem 0 4em 0;    
+                    h1{
+                        font-size: 2.5rem;
+                        text-align:right;
+                    }
+                    p{
+                        font-size: 1rem;
+                        text-align:right;
                     }
                 }
-                
-
             }
         }
+         
     }
 }
+
 @import "../global/globalCss/CustomAnime.scss";
 
 
@@ -92,8 +113,20 @@
                     }
                 }
             }
-            .gallery_img{
-                columns: 2;
+            .gallery_right_wrapper{
+                .gallery_img{
+                    columns: 2;
+                }
+                .bottom_content{
+                    .content_wrapper{
+                        h1{
+
+                        }
+                        p{
+
+                        }
+                    }
+                }
             }
         }
     }
@@ -125,8 +158,21 @@
                     }
                 }
             }
-            .gallery_img{
-                columns: 2;
+
+            .gallery_right_wrapper{
+                .gallery_img{
+                    columns: 2;
+                }
+                .bottom_content{
+                    .content_wrapper{
+                        h1{
+
+                        }
+                        p{
+                            
+                        }
+                    }
+                }
             }
         }
     }

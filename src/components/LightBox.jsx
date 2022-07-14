@@ -16,15 +16,17 @@ function LightBox(props) {
   )
 }
 const openLightbox=()=>{
-    const lightboxWindow= document.getElementsByClassName("lightbox_wrapper");
-    lightboxWindow[0].style.opacity="1";
-    lightboxWindow[0].style.zIndex="3";
+    const lightboxWindow= document.querySelector(".lightbox_wrapper");
+    lightboxWindow.style.opacity="1";
+    lightboxWindow.style.zIndex="999";
+    console.log(window.innerWidth);
+    window.scrollTo(window.innerWidth,window.innerHeight);
 }
 
 const closeLightbox=()=>{
-    const lightboxWindow= document.getElementsByClassName("lightbox_wrapper");
-    lightboxWindow[0].style.opacity ="0";
-    lightboxWindow[0].style.zIndex="-1";
+    const lightboxWindow= document.querySelector(".lightbox_wrapper");
+    lightboxWindow.style.opacity ="0";
+    lightboxWindow.style.zIndex="-1";
 }
 
 export {LightBox,openLightbox};

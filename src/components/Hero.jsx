@@ -7,12 +7,13 @@ function Hero() {
     const moveSlider=()=>{
         const getSlider=document.querySelector(".hero_slider");
         setToggle(!toggle);
-        console.log(getSlider);
         if(!toggle){
             getSlider.style.transform="translateX(100%)";
+            getSlider.style.backgroundImage="url('/photos/Wedding12.jpg')"
         }
         else{
             getSlider.style.transform="translateX(0%)";
+            getSlider.style.backgroundImage="url('/photos/Wedding16.jpg')"
         }
     }
 

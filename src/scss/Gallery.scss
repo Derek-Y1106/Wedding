@@ -1,10 +1,4 @@
 .gallery_cover{
-
-    h1{
-        font-size: 8em;
-        font-weight: lighter;
-        color: var(--primary_color);
-    }
     .gallery{
         padding: 2em;
         z-index: 2;
@@ -78,9 +72,6 @@
 @media screen and (min-width:$labtop) and (max-width:$pc){}
 @media (min-width:$mobile) and (max-width:$labtop){
     .gallery_cover{
-        h1{
-            font-size: 6em;
-        }
         .gallery{
             .gallery_side{
                 .side_content{
@@ -109,9 +100,6 @@
 }
 @media (max-width:$mobile) {
     .gallery_cover{
-        h1{
-            font-size: 5em;
-        }
         .gallery{
             .gallery_side{
                 .side_content{

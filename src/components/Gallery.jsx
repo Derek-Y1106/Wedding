@@ -17,7 +17,6 @@ function Gallery() {
     }
   return (
     <div className='gallery_cover y_even'>
-       <h1 className='gallery_title center_center'>Gallery</h1>
         <div className="gallery x_even">
             <div className="gallery_side ">
                 <div className="side_content column_top_center">

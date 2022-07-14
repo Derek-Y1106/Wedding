@@ -17,16 +17,18 @@ function LightBox(props) {
 }
 const openLightbox=()=>{
     const lightboxWindow= document.querySelector(".lightbox_wrapper");
+    const html= document.querySelector("html");
     lightboxWindow.style.opacity="1";
     lightboxWindow.style.zIndex="999";
-    console.log(window.innerWidth);
-    window.scrollTo(window.innerWidth,window.innerHeight);
+    html.style.overflow="hidden";
 }
 
 const closeLightbox=()=>{
     const lightboxWindow= document.querySelector(".lightbox_wrapper");
+    const html= document.querySelector("html");
     lightboxWindow.style.opacity ="0";
     lightboxWindow.style.zIndex="-1";
+    html.style.overflow="visible";
 }
 
 export {LightBox,openLightbox};

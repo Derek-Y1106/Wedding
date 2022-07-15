@@ -3,7 +3,7 @@
   --secondary_color:#fdf0ff;;  
   --button_color:#abcde9;
   --button_active_color:#133869;
-  --background_color:#fdffeb;
+  --background_color:#fdffee;
   --font_color:#233244;
 }
 
@@ -15,7 +15,6 @@ html,body,div,video{
 ::-webkit-scrollbar{
   display: none;
 }
-
 
 h1,h2,h3,h4,h5,button{
   color: var(--primary_color);

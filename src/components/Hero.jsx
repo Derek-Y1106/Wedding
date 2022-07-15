@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { useState } from 'react';
-import '../scss/Hero.scss'
+import '../scss/Hero.scss';
+import {SlideIn,SlideOut} from '../Anime/CustomAnime';
 
 function Hero() {
     const [toggle,setToggle] = useState(true);
@@ -16,18 +17,6 @@ function Hero() {
             getSlider.style.backgroundImage="url('/photos/Wedding16.jpg')"
         }
     }
-    const slide_up=()=>{
-        const target=document.querySelectorAll(".slide_word");
-        target[0].style.transform="translateY(0%)";
-        target[1].style.transform="translateY(0%)";
-    }
-
-    const slide_down=()=>{
-        const target=document.querySelectorAll(".slide_word");
-        target[0].style.transform="translateY(200%)";
-        target[1].style.transform="translateY(200%)";
-        console.log(target[0]);
-    }
 
   return (
     <div>
@@ -37,10 +26,10 @@ function Hero() {
 
                 </div>
                 <div className="arrow_wrapper center_center" >
-                    <div className="slide_word">Slide</div>
-                    <div className="arrow_left" onClick={moveSlider} onMouseEnter={slide_up} onMouseLeave={slide_down}></div> 
-                    <div className="arrow_right" onClick={moveSlider} onMouseEnter={slide_up} onMouseLeave={slide_down}></div>
-                    <div className="slide_word">Slide</div>
+                    <div className="slide_word_left">Slide</div>
+                    <div className="arrow_left" onClick={moveSlider} onMouseEnter={SlideIn} onMouseLeave={SlideOut}></div> 
+                    <div className="arrow_right" onClick={moveSlider} onMouseEnter={SlideIn} onMouseOut={SlideOut}></div>
+                    <div className="slide_word_right">Slide</div>
                 </div>
                 <div className="hero_inner column_center_center">
                     <div className="content">

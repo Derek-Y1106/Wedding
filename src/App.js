@@ -5,9 +5,10 @@ import Mr from './pages/Mr';
 import Mrs from './pages/Mrs';
 import Footer from "./global/Footer";
 import Header from "./global/Header";
+import {SeperateText} from './Anime/CustomAnime';
 
 function App() {
-  
+  SeperateText();
   return (
     <div>
       <BrowserRouter>

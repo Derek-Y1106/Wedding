@@ -5,7 +5,6 @@ import {GiRoyalLove} from "react-icons/gi";
 import {MoveLeft,Span} from "../Anime/CustomAnime";
 
 function Gallery() {
-    Span();
     const imageArray =[];
     const [Image,setImage]=useState();
     

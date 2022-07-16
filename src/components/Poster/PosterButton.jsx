@@ -13,7 +13,7 @@ function PosterButton(props) {
     const styles={
         height: height,
         width: width,
-        background:`url(${background_img})`,
+        backgroundImage:`url(${background_img})`,
         color:color,
     };
 

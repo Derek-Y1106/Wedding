@@ -18,13 +18,25 @@
 }
 
 .button{
-    height:100vh;
     background: none;
     background-repeat: no-repeat!important;
     background-position: center!important;
     background-size: cover!important;
     border: none;
     font-size: 2rem
+}
+
+.poster_button{
+    .button{
+        height:100vh;
+        font-size: 8rem;
+        font-style: italic;
+        transition: 1s ease-in-out;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.442);
+            background-blend-mode:color-burn!important;
+        }
+    }
 }
 
 

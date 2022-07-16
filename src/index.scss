@@ -16,6 +16,10 @@ html,body,div,video{
   display: none;
 }
 
+button{
+  cursor: pointer;
+}
+
 h1,h2,h3,h4,h5,button{
   color: var(--primary_color);
   margin:0;

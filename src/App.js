@@ -3,8 +3,8 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Mr from './pages/Mr';
 import Mrs from './pages/Mrs';
-import Footer from "./global/Footer";
-import Header from "./global/Header";
+import Footer from "./global/globalJsx/Footer";
+import Header from "./global/globalJsx/Header";
 import {SeperateText} from './Anime/CustomAnime';
 
 function App() {

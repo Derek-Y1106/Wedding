@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../scss/Gallery.scss'
 import {LightBox, openLightbox} from './LightBox';
 import {GiRoyalLove} from "react-icons/gi";
-import {MoveLeft,Span} from "../Anime/CustomAnime";
+import {MoveLeft} from "../Anime/CustomAnime";
 
 function Gallery() {
     const imageArray =[];

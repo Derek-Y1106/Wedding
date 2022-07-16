@@ -1,7 +1,7 @@
 import React from 'react'
 import '../scss/LightBox.scss'
-function LightBox(props) {
 
+function LightBox(props) {
   return (
     <div>
         <div className="lightbox_wrapper center_center">

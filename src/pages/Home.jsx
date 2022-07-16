@@ -3,6 +3,7 @@ import Gallery from '../components/Gallery'
 import WeddingVideo from '../videos/Wedding2.mp4'
 import '../scss/Home.scss'
 import Hero from '../components/Hero'
+import Poster from '../components/Poster/Poster'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       </div>
       <Gallery />
       <Hero/>
+      <Poster/>
     </div>
   )
 }

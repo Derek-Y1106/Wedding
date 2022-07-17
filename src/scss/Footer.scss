@@ -37,4 +37,10 @@
 @import "../global/globalCss/global.scss";
 @media screen and (min-width:$labtop) and (max-width:$pc){}
 @media (min-width:$mobile) and (max-width:$labtop){}
-@media (max-width:$mobile) {}
+@media (max-width:$mobile) {
+    .footer{
+        height: 3.5rem;
+        padding: 1rem 2rem;
+        font-size: .6rem;
+    }
+}

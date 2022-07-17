@@ -25,12 +25,12 @@ function Hero() {
                 <div className="hero_slider">
                 </div>
                 <div className="arrow_wrapper x_around" >
-                    <div className="arrow_inner x_even">
+                    <div className="arrow_inner x_even" >
                         <div className="slide_word_left">Slide</div>
                         <div className="arrow_left" onClick={moveSlider} onMouseEnter={SlideIn} onMouseLeave={SlideOut}></div> 
                     </div>
 
-                    <div className="arrow_inner x_even">
+                    <div className="arrow_inner x_even" >
                         <div className="arrow_right" onClick={moveSlider} onMouseEnter={SlideIn} onMouseLeave={SlideOut}></div>
                         <div className="slide_word_right">Slide</div>
                     </div>

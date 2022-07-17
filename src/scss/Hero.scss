@@ -51,6 +51,7 @@
                 
                     &::before{
                         position: absolute;
+                        z-index: -1;
                         content: '';
                         width: 100%;
                         height: 100%;
@@ -63,9 +64,9 @@
                 }
                 .arrow_left{
                     &:hover{
-                        -webkit-animation: 3s arrow_left infinite ;
-                        animation: 3s arrow_left infinite ;
-                        -moz-animation: 3s arrow_left infinite;
+                        -webkit-animation: 2s arrow_left infinite alternate;
+                        animation: 2s arrow_left infinite alternate;
+                        -moz-animation: 2s arrow_left infinite alternate;
                         
                     }
                 
@@ -73,9 +74,9 @@
                 .arrow_right{
                     transform: rotate(180deg+45deg);
                     &:hover{
-                        -webkit-animation: 3s arrow_right infinite;
-                        animation: 3s arrow_right infinite;
-                        -moz-animation: 3s arrow_left infinite;
+                        -webkit-animation: 2s arrow_right infinite alternate;
+                        animation: 2s arrow_right infinite alternate;
+                        -moz-animation: 2s arrow_left infinite alternate;
                     }
                 }
             }
@@ -137,7 +138,7 @@
 }
 @media (max-width:$mobile) {
     .hero{
-        height: 60vh;
+        height: 65vh;
     }
     .hero_wrapper > .hero > .hero_inner > .content{
         padding: 2em ;
@@ -146,8 +147,8 @@
         font-size: 2rem;
     }
     .hero_wrapper > .hero > .hero_inner > .content> p{
-        font-size: 1rem;
-        max-height: 30vh;
+        font-size: .5rem;
+        max-height: 25vh;
     }
     .hero_wrapper > .hero > .arrow_wrapper{
         .arrow_left, .arrow_right{

@@ -32,7 +32,7 @@ export const SlideIn=()=>{
     opacity:[0,1],
     translateY: [-100,0] ,
     translateX:[100,0],
-    duration:500,
+    duration:1000,
     easing: 'easeInSine',
     delay:anime.stagger(50)
   });
@@ -43,7 +43,7 @@ export const SlideIn=()=>{
     opacity:[0,1],
     translateY: [100,0] ,
     translateX:[100,0],
-    duration:500,
+    duration:1000,
     easing: 'easeInSine',
     delay:anime.stagger(50)
   });

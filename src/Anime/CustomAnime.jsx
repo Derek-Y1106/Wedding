@@ -33,7 +33,7 @@ export const SlideIn=()=>{
     translateY: [-100,0] ,
     translateX:[100,0],
     duration:500,
-    easing: 'easeOutSine',
+    easing: 'easeInSine',
     delay:anime.stagger(50)
   });
   
@@ -44,7 +44,7 @@ export const SlideIn=()=>{
     translateY: [100,0] ,
     translateX:[100,0],
     duration:500,
-    easing: 'easeOutSine',
+    easing: 'easeInSine',
     delay:anime.stagger(50)
   });
 }
@@ -66,7 +66,7 @@ export const SlideOut=()=>{
     targets: target2,
     opacity:[1,0],
     translateY: [0,200] ,
-    translateX:0,
+    translateX:[0,100],
     duration:2000,
     easing: 'easeOutSine',
     delay:anime.stagger(50)

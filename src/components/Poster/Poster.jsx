@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './PosterButton'
 import '../../scss/Poster.scss'
 import Motto from './Motto'
+import { Link } from 'react-router-dom'
 
 function Poster() {
   return (
@@ -10,8 +11,13 @@ function Poster() {
         
         <div className="button_wrapper">
             <div className='poster_button center_center'>
-            <Button width={"50vw"} content={"MR"} background_img={"/photos/Wedding18.jpg"} color='white'></Button>
-            <Button width={"50vw"} content={"MRS"} background_img={"/photos/Wedding15.jpg"} color='white'></Button>
+            <Link to={"/Mr"}>
+                <Button width={"50vw"} content={"MR"} background_img={"/photos/Wedding18.jpg"} color='white'></Button>
+            </Link>
+            
+            <Link to={"/Mrs"}>
+                <Button width={"50vw"} content={"MRS"} background_img={"/photos/Wedding15.jpg"} color='white'></Button>
+            </Link>
             </div>
         </div>
     </div>

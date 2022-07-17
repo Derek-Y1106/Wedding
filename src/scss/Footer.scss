@@ -1,0 +1,39 @@
+.footer{
+    height: 5rem;
+    padding: 1rem 0;
+    background-color: var(--background_color);
+
+    .arrow_top{
+        height: 2rem;
+        width: 2rem;
+        border-top: 2px solid black ;
+        border-left: 2px solid black ;
+        transform: rotate(45deg);
+        transition: 1s ease-in;
+        
+        &::before{
+            position:absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            transform: scale(20%);
+            border-radius:50% ;
+            background-color: black;
+        }
+        &:hover{
+            cursor: pointer;
+            animation: 1s arrow_up alternate infinite;
+        }
+    }
+    p{
+        font-weight: bold;
+    }
+}
+
+@import "../global/globalCss/CustomAnime.scss";
+@import "../global/globalCss/global.scss";
+@media screen and (min-width:$labtop) and (max-width:$pc){}
+@media (min-width:$mobile) and (max-width:$labtop){}
+@media (max-width:$mobile) {}

@@ -22,3 +22,9 @@
         transform: rotate(180deg+45deg) translate(0px);
     }
 }
+
+@keyframes arrow_up {
+    to{
+        transform: rotate(45deg) translate(-20%,-20%);
+    }
+}

@@ -104,6 +104,11 @@ a{
   justify-content:space-between;
   align-items: center;
 }
+.x_between{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
 .y_even{
   display: flex;
   flex-direction: column;
@@ -114,5 +119,11 @@ a{
   display: flex;
   flex-direction: column;
   justify-content:space-between;
+  align-items: center;
+}
+.y_around{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
   align-items: center;
 }

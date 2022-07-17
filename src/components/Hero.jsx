@@ -23,13 +23,17 @@ function Hero() {
         <div className="hero_wrapper">
             <div className="hero">
                 <div className="hero_slider">
-
                 </div>
-                <div className="arrow_wrapper center_center" >
-                    <div className="slide_word_left">Slide</div>
-                    <div className="arrow_left" onClick={moveSlider} onMouseEnter={SlideIn} onMouseLeave={SlideOut}></div> 
-                    <div className="arrow_right" onClick={moveSlider} onMouseEnter={SlideIn} onMouseOut={SlideOut}></div>
-                    <div className="slide_word_right">Slide</div>
+                <div className="arrow_wrapper x_around" >
+                    <div className="arrow_inner x_even">
+                        <div className="slide_word_left">Slide</div>
+                        <div className="arrow_left" onClick={moveSlider} onMouseEnter={SlideIn} onMouseLeave={SlideOut}></div> 
+                    </div>
+
+                    <div className="arrow_inner x_around">
+                        <div className="arrow_right" onClick={moveSlider} onMouseEnter={SlideIn} onMouseLeave={SlideOut}></div>
+                        <div className="slide_word_right">Slide</div>
+                    </div>
                 </div>
                 <div className="hero_inner column_center_center">
                     <div className="content">

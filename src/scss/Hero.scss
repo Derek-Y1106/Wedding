@@ -35,7 +35,7 @@
             }
             .arrow_left,.arrow_right{
                 z-index: 20;
-                margin: 2em 0;
+                margin: 2rem;
                 width: 3em;
                 height: 3em;
                 transform: rotate(45deg);
@@ -60,7 +60,6 @@
                 }
             }
             .arrow_left{
-                margin:0 5em 0 3em;
                 &:hover{
                     -webkit-animation: 3s arrow_left infinite ;
                     animation: 3s arrow_left infinite ;
@@ -70,7 +69,6 @@
             
             }
             .arrow_right{
-                margin:0 3em 0 5em;
                 transform: rotate(180deg+45deg);
                 &:hover{
                     -webkit-animation: 3s arrow_right infinite;
@@ -117,13 +115,24 @@
     
 }
 @media (max-width:$mobile) {
+    .hero_wrapper > .hero > .hero_inner {
+        display: block;
+    }
     .hero_wrapper > .hero > .hero_inner > .content{
         padding: 2em ;
     }
     .hero_wrapper > .hero > .hero_inner > .content> h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .hero_wrapper > .hero > .hero_inner > .content> p{
-        font-size: 3rem;
+        font-size: 1rem;
+        max-height: 30vh;
+    }
+    .hero_wrapper > .hero > .arrow_wrapper{
+        .arrow_left, .arrow_right{
+            width: 2rem;
+            height: 2rem;
+            margin: em 0;
+        }
     }
 }

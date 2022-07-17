@@ -5,7 +5,7 @@
 }
 
 .motto{
-    padding:15rem 15rem 5rem;
+    padding:0rem 15rem 5rem;
     width: auto;
     background-repeat: no-repeat!important;
     background-position: center!important;
@@ -41,10 +41,37 @@
 
 
 @import "../global/globalCss/global.scss";
-@media screen and (min-width:$labtop) and (max-width:$pc){}
-@media (min-width:$mobile) and (max-width:$labtop){
-    .button{
-        height: 20vh!important;
+@media screen and (min-width:$labtop) and (max-width:$pc){
+    .motto{
+        padding:0rem 6rem 2.5rem;
+        font-size: 2rem;
     }
 }
-@media (max-width:$mobile) {}
+@media (min-width:$mobile) and (max-width:$labtop){
+    .motto{
+        padding:0rem 5rem 2.5rem;
+        font-size: 2rem;
+    }
+    .button{
+        font-size: 2rem;
+    }
+    .poster_button{
+        .button{
+            height:100vh;
+            font-size: 5rem;
+        }
+    }
+}
+@media (max-width:$mobile) {
+    .motto{
+        padding:0rem 2rem 2.5rem;
+        font-size: 1.5rem;
+    }
+    .poster_button{
+        display: block;
+        .button{
+            width: 100%!important;            
+            font-size: 5rem;
+        }
+    }
+}

@@ -21,7 +21,7 @@ function Motto(props) {
 
   return (
     <div>
-        <div className={`motto ${layout}`} style={styles}>
+        <div className={`parallax ${layout}`} style={styles}>
             {content}
         </div>
     </div>

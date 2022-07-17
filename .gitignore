@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+@import "../global/globalCss/CustomAnime.scss";
+@import "../global/globalCss/global.scss";
+@media screen and (min-width:$labtop) and (max-width:$pc){}
+@media (min-width:$mobile) and (max-width:$labtop){}
+@media (max-width:$mobile) {}

@@ -5,10 +5,10 @@ import Mr from './pages/Mr';
 import Mrs from './pages/Mrs';
 import Footer from "./global/globalJsx/Footer";
 import Header from "./global/globalJsx/Header";
-import {SeperateText} from './Anime/CustomAnime';
+// import {SeperateText} from './Anime/CustomAnime';
 
 function App() {
-  SeperateText();
+  // SeperateText();
   return (
     <div>
       <BrowserRouter>

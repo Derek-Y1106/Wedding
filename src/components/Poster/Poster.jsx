@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './PosterButton'
 import '../../scss/Poster.scss'
-import Motto from './Motto'
+import Motto from '../Parallax'
 import { Link } from 'react-router-dom'
 
 function Poster() {

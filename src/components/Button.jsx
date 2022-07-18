@@ -1,6 +1,6 @@
-import '../../scss/Poster.scss'
+import '../scss/Poster.scss'
 
-function PosterButton(props) {
+function Button(props) {
     const{
         layout,
         height,
@@ -26,4 +26,4 @@ function PosterButton(props) {
   )
 }
 
-export default PosterButton
+export default Button

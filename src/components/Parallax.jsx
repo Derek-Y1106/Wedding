@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Motto(props) {
+function Parallax(props) {
     const{
         layout,
         height,
@@ -28,4 +28,4 @@ function Motto(props) {
   )
 }
 
-export default Motto
+export default Parallax

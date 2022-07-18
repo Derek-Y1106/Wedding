@@ -1,5 +1,23 @@
 .layer{
-    background-color: black
+    .cube_wrapper{
+        height: 100vh;
+        filter: blur(1.2);
+        background-image: url('https://picsum.photos/seed/picsum/2000/3000');
+        background-position: center;
+
+        .cube{
+            background-color: blue;
+            position: relative;
+            height: 600px;
+            width: 600px;
+            
+            .button{
+                position: absolute;
+                top:0;
+                right:0;
+            }
+        }
+    }
 }
 
 
